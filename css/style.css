@@ -85,9 +85,59 @@ body{
     border-radius: 20px;
     padding: 15px;
 }
-.aportacion{
-    background-color: #071952;
-    border-radius: 15px 15px 0px 0px;
+.logobar{
+    display: flex; 
+    background-color: #081849b0; 
+    width: 100%;
+}
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.card-pagos{
+    max-width: 18rem;
+    color: black; 
+    border-color: black;
+    border-radius: 35px;
+}
+.card-header{
+    background-color: #071952e4;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+.card-body{
+    background-color: #76c7b981; 
+    border-radius: 0px 0px 33px 33px;
+}
+.novedades{
+    display: flex; 
+    gap: 10px; 
+    margin-top: 10px; 
+    justify-content: center;
+}
+.requerimientos{
+    color: aliceblue; 
+    background-color: rgb(66, 112, 113);
+}
+.requerimientos-minimos{
+    color: black; 
+    background-color: #76c7b9;
+}
+.descarga{
+    color: #0b2371; 
+    background-color: #76c7b9;
+}
+.problemas{
+    background-color: #15b3bb97; 
+    color: aliceblue; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.pregunta{
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 10px;
 }
 @media (max-width: 1440px){
     .informacion{
