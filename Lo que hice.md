@@ -1,5 +1,7 @@
 # proyecto-final-coderhouse
-Apliqué bootstrap en todos los html y los maqueté con css
-Usé grids en el index con la ayuda de bootstrap
-hice responsive las páginas del index y la de informacion.html
-La página de informacion.html la hice responsive con mediaquerries, exceptuando el header que lo hice con bootstrap por ser barra de navegación
+Apliqué animación en informacion.html
+Responsive: ayuda.html, pagos.html e informacion.html
+Usé sass en todo el proyecto e intenté que quedara organizado
+Apliqué maxin y variables, no apliqué maps debido que no usé difentes tamaños de texto
+Usé algunas meta tags en el index, las que más me gustaron
+Apliqué varios extend a lo largo del proyecto. 
