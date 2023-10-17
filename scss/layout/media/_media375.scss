@@ -1,0 +1,10 @@
+@media (max-width: 375px){
+    .informacion{
+        .contenedor{
+            @include flex5;
+        }
+        .texto{
+            background-color: $bg-7;
+        }
+    }
+}

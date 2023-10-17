@@ -1,0 +1,7 @@
+@media (max-width: 1440px){
+    .informacion{
+        .contenedor{
+            @include flex7(column, center, center, 0rem);
+        }
+    }
+}

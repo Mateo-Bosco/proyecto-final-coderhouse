@@ -1,0 +1,13 @@
+.menubar{
+    background-color: $bg-4;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    li{
+        padding-right: 30px;
+        padding-left: 30px;
+        a:hover{
+            background: $bg-5;
+        }
+    }
+}

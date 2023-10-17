@@ -1,78 +1,86 @@
+/**Utilities*/
+/**Base*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-.header {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0B666A; }
-
+/**Layout*/
 body {
   background-color: #0B666A;
-  color: aliceblue; }
-
-.titulo {
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 20px;
-  background-color: #071952;
-  text-align: center;
-  border-radius: 30px; }
+  color: aliceblue;
+}
 
 .pie {
   position: fixed;
   background-color: aqua;
   width: 100%;
   height: 20px;
-  bottom: 0; }
+  bottom: 0;
+}
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0B666A;
+}
 
 .imagen {
   padding-right: 0px;
-  padding-left: 0px; }
+  padding-left: 0px;
+}
+
+.logo {
+  width: 7%;
+  height: 7%;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.logobar {
+  display: flex;
+  background-color: rgba(8, 24, 73, 0.6901960784);
+  width: 100%;
+}
 
 .menubar {
   background-color: #051032;
   padding-right: 0px;
   padding-left: 0px;
-  width: 100%; }
-  .menubar li {
-    padding-right: 30px;
-    padding-left: 30px; }
-    .menubar li a:hover {
-      background: #76c7b9; }
+  width: 100%;
+}
+.menubar li {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.menubar li a:hover {
+  background: #76c7b9;
+}
 
-.contenedor {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px; }
+.titulo, .titulo3, .titulo2 {
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  background-color: #071952;
+  text-align: center;
+  border-radius: 30px;
+}
 
 .texto {
   text-align: center;
   max-width: 45%;
   background-color: #76c7b9;
   border-radius: 15px;
-  padding: 15px; }
-
-.logo {
-  width: 7%;
-  height: 7%;
-  min-width: 50px;
-  min-height: 50px; }
-
-.contenedor2 {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 5px;
-  flex-wrap: wrap; }
+  padding: 15px;
+}
 
 .titulo2 {
-  align-items: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-top: 20px;
-  text-align: center;
-  border-radius: 30px; }
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.titulo3 {
+  background-color: rgba(118, 199, 185, 0.5058823529);
+}
 
 .texto2 {
   text-align: center;
@@ -81,97 +89,141 @@ body {
   max-height: 100%;
   background-color: #76c7b9;
   border-radius: 20px;
-  padding: 15px; }
+  padding: 15px;
+}
 
-.logobar {
+.pregunta {
   display: flex;
-  background-color: #081849b0;
-  width: 100%; }
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
 
+/**Components*/
 .contenedor-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .card-pagos {
   max-width: 18rem;
   color: black;
   border-color: black;
-  border-radius: 35px; }
+  border-radius: 35px;
+}
 
 .card-header {
-  background-color: #071952e4;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgba(7, 25, 82, 0.8941176471);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: aliceblue;
-  text-align: center; }
+  text-align: center;
+}
 
 .card-body {
-  background-color: #76c7b981;
-  border-radius: 0px 0px 33px 33px; }
+  background-color: rgba(118, 199, 185, 0.5058823529);
+  border-radius: 0px 0px 33px 33px;
+}
 
-.novedades {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-  justify-content: center; }
-
-.requerimientos {
-  color: aliceblue;
-  background-color: #427071; }
-
-.requerimientos-minimos {
-  color: black;
-  background-color: #76c7b9; }
-
-.descarga {
-  color: #0b2371;
-  background-color: #76c7b9; }
-
-.problemas {
-  background-color: #15b3bb97;
-  color: aliceblue;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
-
-.pregunta {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px; }
-
+/**Mediaquery*/
 @media (max-width: 1440px) {
   .informacion .contenedor {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; } }
-
-@media (max-width: 1025px) {
-  .informacion .contenedor {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1px; } }
-
+    gap: 0rem;
+  }
+}
+@media (max-width: 1025px) {
+  .informacion .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.0625rem;
+  }
+}
 @media (max-width: 768px) {
   .informacion .texto {
-    background-color: #071952; } }
-
+    background-color: rgba(7, 25, 82, 0.8941176471);
+  }
+}
 @media (max-width: 425px) {
   .informacion .contenedor {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: start; }
+    align-items: start;
+    gap: 0rem;
+  }
   .informacion .texto {
-    background-color: #76c7b9; } }
-
+    background-color: #76c7b9;
+  }
+}
 @media (max-width: 375px) {
   .informacion .contenedor {
+    display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+  }
   .informacion .texto {
-    background-color: #071952; } }
-
+    background-color: rgba(7, 25, 82, 0.8941176471);
+  }
+}
 @media (max-width: 320px) {
   .informacion .contenedor {
+    display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+  }
   .informacion .texto {
-    background-color: #76c7b9; } }
+    background-color: #76c7b9;
+  }
+}
+.contenedor {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.contenedor2 {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.novedades {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.requerimientos {
+  color: aliceblue;
+  background-color: rgb(66, 112, 113);
+}
+
+.requerimientos-minimos {
+  color: black;
+  background-color: #76c7b9;
+}
+
+.descarga {
+  color: #0b2371;
+  background-color: #76c7b9;
+}
+
+.problemas {
+  background-color: rgba(21, 179, 187, 0.5921568627);
+  color: aliceblue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

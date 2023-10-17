@@ -1,0 +1,30 @@
+@mixin flex2 ($gap, $justify, $wrap){
+    display: flex;
+    gap: $gap;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+@mixin flex3{
+    display: flex;
+}
+@mixin flex4{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin flex7($direction, $justify, $items, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $items;
+    gap: $gap;
+}
+@mixin flex10($wrap, $justify){
+    display: flex;
+    flex-wrap: $wrap; 
+    justify-content: $justify;
+}

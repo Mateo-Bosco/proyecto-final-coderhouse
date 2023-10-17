@@ -1,0 +1,19 @@
+.contenedor-cards{
+    @include flex10(wrap, space-around);
+}
+.card-pagos{
+    max-width: 18rem;
+    color: $color-secundario; 
+    border-color: $color-secundario;
+    border-radius: 35px;
+}
+.card-header{
+    background-color: $bg-7;
+    font-family: $font-family-secundaria;
+    color: $color-principal;
+    text-align: center;
+}
+.card-body{
+    background-color: $bg-8; 
+    border-radius: 0px 0px 33px 33px;
+}
