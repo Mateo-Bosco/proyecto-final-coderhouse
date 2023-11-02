@@ -5,3 +5,10 @@
         }
     }
 }
+@media (max-width: 768px){
+    .novedades-html{
+        .novedades{
+            @include flex5(column, center)
+        }
+    }
+}

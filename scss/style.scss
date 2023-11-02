@@ -34,7 +34,7 @@
     margin-top: 5px;
 }
 .novedades{
-    @include flex2 (.625rem, center, nowrap);
+    @include flex2 (.625rem, center, wrap);
     margin-top: 10px; 
 }
 .requerimientos{
