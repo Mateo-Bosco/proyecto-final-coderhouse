@@ -28,3 +28,9 @@
     flex-wrap: $wrap; 
     justify-content: $justify;
 }
+@mixin flex1($gap, $justify, $wrap){
+    display: flex;
+    gap: $gap;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
